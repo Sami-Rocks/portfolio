@@ -4,13 +4,14 @@
   height: 100vh;
   width: fit-content;
 }
+
 header {
   display: flex;
   width: calc(100vw - 40px);
   margin: 10px 20px;
   justify-content: space-between;
   position: fixed;
-  font-size: 15px;
+  font-size: 1.3rem;
   z-index: 1;
 }
 header h1 {
@@ -27,7 +28,7 @@ h1 {
 }
 .space {
   min-width: 20vw;
-  height: 300px;
+  height: 4rem;
 }
 .end {
   max-width: 10vh;
@@ -38,14 +39,14 @@ h1 {
 }
 .container {
   display: flex;
-  gap: 50px;
+  gap: 2.5rem;
   height: 100vh;
   align-items: center;
 }
 .block {
   position: relative;
-  min-width: 320px;
-  height: 400px;
+  width: 28.5rem;
+  height: 30rem;
   background-position: center;
   background-size: cover;
   transition: all ease 0.5s;
@@ -53,26 +54,9 @@ h1 {
   transform: scale(1);
 }
 
-.block:hover {
-  filter: grayscale(0%);
-}
-
-.inactive {
-  min-width: 650px;
-  height: 500px;
-}
-.active {
-  min-width: 650px;
-  height: 500px;
-  filter: grayscale(0%);
-  opacity: 0.3;
-}
-.active:hover {
-  filter: grayscale(0);
-}
 .texts {
   position: relative;
-  left: -130px;
+  left: -8rem;
   text-align: left;
   cursor: default;
   /* text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
@@ -82,26 +66,43 @@ h1 {
 .type,
 .description,
 a {
+  /* text-shadow: 0.3px 0.3px 3px black; */
   filter: grayscale(0%);
   text-align: left;
 }
 .type {
-  font-size: 15px;
+  font-size: 1.6rem;
 }
 
 .title {
-  font-size: 70px;
-  line-height: 65px;
+  font-size: 5rem;
+  line-height: 4.3rem;
   font-weight: 900;
 }
 .description {
-  font-size: 15px;
+  font-size: 1.4rem;
   font-style: italic;
 }
 
 a {
   text-decoration: underline;
   color: white;
-  font-size: 11px;
+  font-size: 2rem;
   font-style: italic;
+}
+
+.-scroll {
+  position: fixed;
+  color: #fff;
+  bottom: 0;
+  display: flex;
+}
+.-scroll > p {
+  font-size: 1.5rem;
+  padding: 5px 20px;
+  padding-right: 0px;
+}
+.-scroll > svg {
+  width: 1.2rem;
+  height: 1.2rem;
 }

@@ -11,19 +11,29 @@
   width: 100%;
   height: 100%;
   h1 {
-    font-size: 120px;
-    line-height: 50px;
+    font-size: 7.2rem;
+    line-height: 3.2rem;
     font-weight: 900;
   }
   p {
-    margin-top: 50px;
-    font-size: 25px;
-    max-width: 700px;
+    margin-top: 3.2rem;
+    font-size: 2.5rem;
+    max-width: 42rem;
+    word-break: break-word !important;
   }
 
-  .name-desc {
-  }
   .others {
+    margin-top: 2 0.2rem;
     display: flex;
+    gap: 30px;
+    svg {
+      width: 2.2rem;
+      height: 2.2rem;
+      fill: #fff;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        fill: #ccc;
+      }
+    }
   }
 }

@@ -2,10 +2,29 @@
   html,
 body {
   margin: 0;
+  font-size: 100%;
+}
+p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 body {
   background: #212121;
   height: 100vh;
   overflow-y: hidden;
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", serif;
+}
+
+@media only screen and (max-width: 780px) {
+  html,
+  body {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 48%;
+  }
 }
