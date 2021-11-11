@@ -4,6 +4,7 @@ import imag3 from './assets/images/third.png'
 import imag4 from './assets/images/fourth.png'
 import imag5 from './assets/images/fifth.png'
 import imag6 from './assets/images/sixth.JPG'
+import imag7 from './assets/images/seventh.png'
 
 const arr = [
   {
@@ -65,7 +66,18 @@ const arr = [
     image: imag6,
     class: 'block',
     tech: 'React, Redux, SCSS, Firebase'
+  },
+  {
+    id: 6, 
+    name: 'Windows 98',
+    type: "Web App",
+    description: "My custom built version of windows 98 built in web",
+    link: "https://window-98.web.app/",
+    image: imag7,
+    class: 'block',
+    tech: 'React, SCSS, Firebase'
   }
+
 ]
 
 export default arr
