@@ -5,6 +5,7 @@ import imag4 from './assets/images/fourth.png'
 import imag5 from './assets/images/fifth.png'
 import imag6 from './assets/images/sixth.JPG'
 import imag7 from './assets/images/seventh.png'
+import imag8 from './assets/images/eigth.png'
 
 const arr = [
   {
@@ -68,12 +69,22 @@ const arr = [
     tech: 'React, Redux, SCSS, Firebase'
   },
   {
-    id: 6, 
+    id: 7, 
     name: 'Windows 98',
     type: "Web App",
     description: "My custom built version of windows 98 built in web",
     link: "https://window-98.web.app/",
     image: imag7,
+    class: 'block',
+    tech: 'React, SCSS, Firebase'
+  },
+  {
+    id: 8, 
+    name: 'Managr',
+    type: "Web App (Jira Clone)",
+    description: "My custom built Jira or Trello clone",
+    link: "https://project-mangr.web.app/",
+    image: imag8,
     class: 'block',
     tech: 'React, SCSS, Firebase'
   }
