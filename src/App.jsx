@@ -3,7 +3,7 @@ import './assets/styles/App.css';
 import Flip from 'react-reveal/Flip';
 import AboutMe from './AboutMe';
 import Main from './Main';
-
+import Helmet from 'react-helmet'
 
 export const AboutContext = createContext({
   about:false,
@@ -16,6 +16,31 @@ function App() {
 
   return (
     <AboutContext.Provider value={{about, setAbout}}>
+            <Helmet 
+              title={"Sami Rocks"} 
+              meta={[
+                {
+                  name: `description`,
+                  content: `I'm a designer and Front-end Engineer based in Accra, Ghana. I design and build strong and striking visual concepts that arouse curiosity, create enthusiasm and show ambition. This website is mainly to display my creative work.`
+                },
+                {
+                  property: `og:description`,
+                  content: ` I'm a designer and Front-end Engineer based in Accra, Ghana. I design and build strong and striking visual concepts that arouse curiosity, create enthusiasm and show ambition. This website is mainly to display my creative work.`
+                },
+                {
+                  property: `og:title`,
+                  content: `Sami Rocks`
+                },
+                {
+                  property: `og:type`,
+                  content: `website`
+                },
+                {
+                  name: `keywords`,
+                  content: `Samuel Owusu-Aboagye, Software Engineer, Programmer, Developer, The best software engineer, CSS artist, Sami, Sami-Rocks, Sami Rocks, Samuel, Owusu-Aboagye, React, React Developer`,
+                }
+              ]}>
+            </Helmet>
       <div className="App">
         {about ? <AboutMe /> : <Main/>}
         
